@@ -4,6 +4,7 @@ exports.up = function(knex) {
       tbl.increments();
       tbl.string("name").notNullable();
       tbl.date("date");
+      tbl.integer("servings");
       tbl.string("category");
       tbl
         .integer("user_id")
