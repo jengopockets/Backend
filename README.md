@@ -9,13 +9,13 @@
 
 # Meals
 
-| Method |    Endpoint    | Body(required) | Body(optional) |
-| :----- | :------------: | :------------: | :------------: |
-| GET    |   /api/meals   |      N/A       |      N/A       |
-| GET    | /api/meals/:id |      N/A       |      N/A       |
-| POST   |   /api/meals   |      name      | date, category |
-| PUT    | /api/meals/:id |      name      | date, category |
-| DELETE | /api/meals/:id |      N/A       |      N/A       |
+| Method |    Endpoint    | Body(required) |      Body(optional)      |
+| :----- | :------------: | :------------: | :----------------------: |
+| GET    |   /api/meals   |      N/A       |           N/A            |
+| GET    | /api/meals/:id |      N/A       |           N/A            |
+| POST   |   /api/meals   |      name      | date, category, servings |
+| PUT    | /api/meals/:id |      name      | date, category, servings |
+| DELETE | /api/meals/:id |      N/A       |           N/A            |
 
 # Users
 
