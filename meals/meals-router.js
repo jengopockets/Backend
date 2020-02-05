@@ -34,7 +34,7 @@ router.get("/:id", (req, res) => {
 router.post("/", authenticate, (req, res) => {
   const mealData = {
     name: req.body.name,
-    user_id: req.subject,
+    pet_id: req.body.pet_id,
     date: req.body.date,
     category: req.body.category,
     servings: req.body.servings

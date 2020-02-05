@@ -14,14 +14,6 @@ exports.up = function(knex) {
       tbl.date("date");
       tbl.integer("servings");
       tbl.string("category");
-      tbl
-        .integer("user_id")
-        .unsigned()
-        .notNullable()
-        .references("id")
-        .inTable("users")
-        .onDelete("CASCADE")
-        .onUpdate("CASCADE");
     });
 };
 
