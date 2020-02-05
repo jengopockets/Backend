@@ -34,8 +34,12 @@ router.get("/:id", (req, res) => {
 router.post("/", authenticate, (req, res) => {
   const mealData = {
     name: req.body.name,
-    user_id: req.subject
+    user_id: req.subject,
+    date: req.body.date,
+    category: req.body.category,
+    servings: req.body.servings
   };
+  console.log(req.subject);
   Meals.addMeal(mealData)
     .then(meals => {
       console.log(req.subject);

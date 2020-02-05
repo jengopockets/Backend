@@ -10,7 +10,7 @@ module.exports = {
 };
 
 function findMeal() {
-  return db("meals").select("id", "date", "category");
+  return db("meals"); //.select("id", "date", "category");
 }
 
 function findMealBy(filter) {
