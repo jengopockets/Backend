@@ -17,6 +17,16 @@
 | PUT    | /api/meals/:id |      name      | date, category, servings |
 | DELETE | /api/meals/:id |      N/A       |           N/A            |
 
+# Pets
+
+| Method |   Endpoint    | Body(required) | Body(optional) |
+| :----- | :-----------: | :------------: | :------------: |
+| GET    |   /api/pets   |      N/A       |      N/A       |
+| GET    | /api/pets/:id |      N/A       |      N/A       |
+| POST   |   /api/pets   |      name      |     status     |
+| PUT    | /api/pets/:id |      name      |     status     |
+| DELETE | /api/pets/:id |      N/A       |      N/A       |
+
 # Users
 
 | Method |    Endpoint    | Body(required) | Body(optional) |
